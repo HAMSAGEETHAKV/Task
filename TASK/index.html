@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Weboin Task</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">LearnHub</div>
+        <ul>
+            <li><a class='active' href='index.html'>Home</a></li>
+            <li><a href='admin.html'>Admin</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Learn from the best, be your best..</h1>
+        <p>Give yourself an upgrade with our inspiring online courses and join a global community of learners.</p>
+        <button onclick="location.href='admin.html'">Get Started</button>
+    </section>
+
+    <section class="partners">
+        <h2>Our Placement Partners</h2>
+        <div class="carousel">
+            <div><img src="airbnb.png" alt="Company 1"></div>
+            <div><img src="client-8.png" alt="Company 2"></div>
+            <div><img src="coty.png" alt="Company 3"></div>
+            <div><img src="Lifegroups.png" alt="Company 4"></div>
+            <div><img src="lilly.png" alt="Company 5"></div>
+            <div><img src="microsoft.png" alt="Company 6"></div>
+            <div><img src="myob.png" alt="Company 7"></div>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <div class="info-left">
+            <div class="info-item">
+                <img src="medal.svg" alt="Certificate Icon">
+                <div>
+                    <h3>Certificate Distribution</h3>
+                    <p>We offer certificates to validate and recognize your achievement.</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <img src="thought.png" alt="Knowledge Icon">
+                <div>
+                    <h3>Knowledge</h3>
+                    <p>We deliver transformative knowledge that empowers and inspires.</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <img src="training.png" alt="Hands-on Experience Icon">
+                <div>
+                    <h3>Hands-on Experience</h3>
+                    <p>We provide hands-on experience for real-world learning. You learn best by doing.</p>
+                </div>
+            </div>
+        </div>
+        <div class="info-right">
+            <img src="AboutDashboard.png" alt="Descriptive Image">
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="stats-left">
+            <p><strong>Empower your future with cutting-edge skills</strong></p>
+            <p>Embrace innovation, master technology, & shape the digital world.</p>
+            <p>Your journey to success starts here.</p>
+        </div>
+        <div class="stats-right">
+            <div class="homeCardContainer">
+                <h3>Total Students: <span id="totalStudents">0</span></h3>
+                <h3>Placed Students: <span id="placedCount">0</span></h3>
+                <h3>Unplaced Students: <span id="unplacedCount">0</span></h3>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.carousel').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                arrows: false,
+                responsive: [{
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">LearnHub</div>
+            <p>&copy; 2025 LearnHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

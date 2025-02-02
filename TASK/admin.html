@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Weboin Task</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">LearnHub</div>
+        <ul>
+            <li><a href='index.html'>Home</a></li>
+            <li><a class='active' href='admin.html'>Admin</a></li>
+        </ul>
+    </nav>
+
+    <section class="content">
+        <h1>FORM</h1>
+        <form id="dataForm">
+            <input type="text" id="name" placeholder="Enter Name" required>
+            <input type="text" id="role" placeholder="Enter Role" required>
+            <input type="email" id="email" placeholder="Enter Email" required>
+            <input type="tel" id="phone" placeholder="Enter Phone Number" required>
+
+            <select id="course" required>
+                <option value="" disabled selected>Select Course</option>
+                <option value="React Basics">React Basics</option>
+                <option value="UI/UX Design">UI/UX Design</option>
+                <option value="JavaScript Fundamentals">JavaScript Fundamentals</option>
+                <option value="Advanced CSS">Advanced CSS</option>
+                <option value="Backend Development">Backend Development</option>
+            </select>
+
+            <select id="status">
+                <option value="placed">Placed</option>
+                <option value="unplaced">Unplaced</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="cardContainer"></div>
+    </section>
+
+    <script src="script.js"></script>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">LearnHub</div>
+            <p>&copy; 2025 LearnHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
